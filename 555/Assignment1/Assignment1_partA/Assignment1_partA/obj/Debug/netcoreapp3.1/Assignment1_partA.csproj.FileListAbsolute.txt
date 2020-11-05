@@ -1,0 +1,12 @@
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/obj/Debug/netcoreapp3.1/Assignment1_partA.csprojAssemblyReference.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/obj/Debug/netcoreapp3.1/Assignment1_partA.AssemblyInfoInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/obj/Debug/netcoreapp3.1/Assignment1_partA.AssemblyInfo.cs
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/obj/Debug/netcoreapp3.1/Assignment1_partA.csproj.CoreCompileInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/bin/Debug/netcoreapp3.1/Assignment1_partA.deps.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/bin/Debug/netcoreapp3.1/Assignment1_partA.runtimeconfig.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/bin/Debug/netcoreapp3.1/Assignment1_partA.runtimeconfig.dev.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/bin/Debug/netcoreapp3.1/Assignment1_partA.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/bin/Debug/netcoreapp3.1/Assignment1_partA.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/obj/Debug/netcoreapp3.1/Assignment1_partA.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/obj/Debug/netcoreapp3.1/Assignment1_partA.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_partA/Assignment1_partA/obj/Debug/netcoreapp3.1/Assignment1_partA.genruntimeconfig.cache

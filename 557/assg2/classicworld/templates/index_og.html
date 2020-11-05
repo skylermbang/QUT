@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    
+    <!-- CSS file-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+
+    <title> Classic World!</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"> Classic World </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >HOME <span class="sr-only">(current)</span></a
+              >
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >SEARCH <span class="sr-only">(current)</span></a
+                >
+              </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >MY PAGE <span class="sr-only">(current)</span></a
+              >
+            </li>
+      
+          </ul>
+        </div>
+      </nav>
+
+     
+ 
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <div class ="jumbotron_img">
+
+            <img src="{{ url_for('static', filename='img/8.png') }}" class="img-fluid" alt="Responsive image">
+       
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+
+    <main>
+
+      <div class="background">
+       
+      </div>
+
+      <h1> Categories</h1>
+
+
+      <div class="container-fluid card">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="card" style="width: 25rem;">
+
+              <img src="../static/img/sls.jpg" class="card-img-top" alt="...">
+
+     
+              <div class="card-body">
+                <h5 class="card-title">Europian</h5>
+                <p class="card-text">  The bes europian lucxuirous cars.  You can select from Ferrari to Jaguar</p>
+                <a href="#" class="btn btn-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card" style="width: 25rem;">
+              <img src="../static/img/69mustang.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> American </h5>
+                <p class="card-text"> The best muscle car generation is in 60's and 50's. We offer the best american muscle cars in the history.</p>
+                <a href="#" class="btn btn-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <h2>SEARCH</h2> 
+            <select class="custom-select" id="input2">
+              <option selected value="0">Choose </option>
+              <option value="1">  Eropian </option>
+              <option value="2">  American</option>
+              <option value="3"> JDM</option>
+            </select>
+
+            <input type="search" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <button type="button1" class="btn btn-dark"> Search </button>
+            
+        
+          </div>
+
+
+        </div>
+
+      <!--  2rd row  -->
+      <div class="container-fluid card">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="card" style="width: 25rem;">
+              <img src="../static/img/others.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Others </h5>
+                <p class="card-text">Some of  handmade cars and some not well known classic cars.</p>
+                <a href="#" class="btn btn-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="card" style="width: 25rem;">
+              <img src="../static/img/gtr2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> JDM </h5>
+                <p class="card-text"> Japanese Deomest Market cars. Meet the legendary JDMs here.</p>
+                <a href="#" class="btn btn-dark">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-2">
+            <p>
+           
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-dark">Submit</button>
+              </form>
+            </p>
+          </div>
+      </div>
+<!--  3rd row  -->
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <h1>  About Us</h1>
+          <p>
+            Classic world is an exclusive classic car specialist in Brisbane. Originating from a 
+            distinct passion for old-timers, we have immersed ourselves in the unique world of classic cars since 1990,
+             provide wide range of selection from American muscle, Eroupian luxury and also JDMs.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <h1 style="color:rgb(15, 14, 14) ;"> News Letter </h1>
+          <p>
+            Sing up for the newsletter
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <button type="submit" class="btn btn-dark">Submit</button>
+          </p>
+
+        </div>
+
+   
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-sm-8">
+          <h1> News & Story</h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to "Bruh is that Supra? "make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+        <div class="col-12 col-sm-4">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.
+          </p>
+        </div>
+      </div>
+    </main>
+
+   
+    <!-- Footer of the website -->
+    <footer>
+      <div class="footer">
+        <p>Copyright@ 2020 by Skyler_Minsu_Bang From IFN 557  Student Number n10664581</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  
+</html>

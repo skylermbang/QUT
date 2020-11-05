@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% block head %}
+<style>
+  .currSign:before {
+    content: "$";
+  }
+</style>
+
+{% endblock %}{% block main %}
+<script>
+  let x = document.querySelectorAll(".myDIV");
+  for (let i = 0, len = x.length; i < len; i++) {
+    let num = Number(x[i].innerHTML).toLocaleString("en");
+    x[i].innerHTML = num;
+    x[i].classList.add("currSign");
+  }
+</script>
+
+<!-- display tours for the specific city -->
+<section>
+ 
+
+
+
+<div class="row">
+    <div class="col">
+        <h2> Dream Car : {{product.modelName}}  {{product.maker}}</h2>
+        <img
+        src="{{url_for('static', filename='img/'+product.image)}}"
+        class="img-fluid"
+        alt="Responsive image"
+      />
+      <p></p>
+        <div class='row'>  
+            <button class="btn btn-dark" onclick="goBack()">Go Back</button>
+            <form action="{{ url_for('main.order') }}">
+                <input
+                type="hidden"
+                id="product_id"
+                name="product_id"
+                value="{{ product.id }}"
+                />
+                <input class="btn btn-dark" type="submit" value="Add to Basket" />
+            </form>
+        </div>  
+    </div>
+    <div class="col">
+        <h3>Vechicle Information</h3>
+        <div class="card" >
+            
+            <ul class="list-group list-group-flush">
+            <li class="list-group-item">Vechicle Specification</li>
+            <li class="list-group-item">Model Name :{{product.modelName}}</li>
+            <li class="list-group-item">Maker :{{product.maker}}</li>
+            <li class="list-group-item">
+                Productoin Year:{{product.productionYear}}
+            </li>
+            <li class="list-group-item">Description:{{product.description}}</li>
+            <li class="list-group-item myDIV">Price : ${{product.price}}</li>
+            <li class="list-group-item">Seller :{{product.seller}}  <span class="badge badge-secondary">Good Seller</span></h6></li>
+            </ul>
+    </div>
+    </div>
+    <div class="col">
+        <img
+        src="{{ url_for('static', filename='img/ad3.jpg') }}"
+        class="img-fluid"
+        alt="Responsive image"
+      />
+    </div>
+  </div>
+
+
+</section>
+  {% endblock %}
+ 
+</div>

@@ -1,0 +1,12 @@
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/obj/Debug/netcoreapp3.1/556_tutorial1.csprojAssemblyReference.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/obj/Debug/netcoreapp3.1/556_tutorial1.AssemblyInfoInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/obj/Debug/netcoreapp3.1/556_tutorial1.AssemblyInfo.cs
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/obj/Debug/netcoreapp3.1/556_tutorial1.csproj.CoreCompileInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/bin/Debug/netcoreapp3.1/556_tutorial1.deps.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/bin/Debug/netcoreapp3.1/556_tutorial1.runtimeconfig.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/bin/Debug/netcoreapp3.1/556_tutorial1.runtimeconfig.dev.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/bin/Debug/netcoreapp3.1/556_tutorial1.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/bin/Debug/netcoreapp3.1/556_tutorial1.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/obj/Debug/netcoreapp3.1/556_tutorial1.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/obj/Debug/netcoreapp3.1/556_tutorial1.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/556_tutorial1/556_tutorial1/obj/Debug/netcoreapp3.1/556_tutorial1.genruntimeconfig.cache

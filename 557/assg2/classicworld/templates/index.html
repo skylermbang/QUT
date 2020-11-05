@@ -1,0 +1,95 @@
+{% extends 'base.html' %} {% block head %} {% endblock %} {% block main %}
+
+
+<!-- display the cataegories to the user -->
+<section>
+  <div class="text-dark text-center">
+    <div>
+      <p class="h3 text-dark col mb-6" id="catg_anchor">
+        Find the best offer !!
+      </p>
+    </div>
+  </div>
+          
+  <div class="card-deck">
+    {% for catg in catgs%}
+
+
+    
+    <div class="card col-lg-6">
+
+      <img
+        class="card-img-top"
+        src="{{url_for('static', filename='img/'+catg.image)}}"
+        alt="Card image"
+      />
+      <div class="card-body">
+        <h4 class="card-title">{{catg.name}}</h4>
+        <p class="card-text">{{catg.description}}</p>
+      </div>
+      <div class="card-footer">
+        
+        <a href=" {{ url_for('main.catgproducts', category_id=catg.id) }}" 
+        class="btn btn-primary">
+          More
+      </a > 
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- marketing information -->
+<div> <h1 style="color: white">  h</h1> </div>
+  <div class="row">
+    <div class="col-12 col-sm-8">
+      <h1> News & Story</h1>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to "Bruh is that Supra? "make a type specimen book. It has survived not
+        only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+      </p>
+    </div>
+    <div class="col-12 col-sm-4">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text
+        ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book. It has survived not
+        only five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+      </p>
+    </div>
+  </div>
+  </section>
+<!--  3rd row  -->
+<div> <h1 style="color: white">  h</h1> </div>
+<div class="row">
+  <div class="col-md-6 col-lg-6">
+    <h1>  About Us</h1>
+    <p>
+      Classic world is an exclusive classic car specialist in Brisbane. Originating from a 
+      distinct passion for old-timers, we have immersed ourselves in the unique world of classic cars since 1990,
+       provide wide range of selection from American muscle, Eroupian luxury and also JDMs.
+    </p>
+  </div>
+
+  <div class="col-md-6 col-lg-6">
+    <h1 style="color:rgb(15, 14, 14) ;"> News Letter </h1>
+    <p>
+      Sing up for the newsletter
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </p>
+
+  </div>
+
+
+</div>
+
+  </div>
+</section>
+{% endblock %}
+

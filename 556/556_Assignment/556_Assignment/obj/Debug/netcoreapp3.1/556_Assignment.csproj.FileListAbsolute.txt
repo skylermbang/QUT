@@ -1,0 +1,12 @@
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/obj/Debug/netcoreapp3.1/556_Assignment.csprojAssemblyReference.cache
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/obj/Debug/netcoreapp3.1/556_Assignment.AssemblyInfoInputs.cache
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/obj/Debug/netcoreapp3.1/556_Assignment.AssemblyInfo.cs
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/obj/Debug/netcoreapp3.1/556_Assignment.csproj.CoreCompileInputs.cache
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/bin/Debug/netcoreapp3.1/556_Assignment.deps.json
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/bin/Debug/netcoreapp3.1/556_Assignment.runtimeconfig.json
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/bin/Debug/netcoreapp3.1/556_Assignment.runtimeconfig.dev.json
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/bin/Debug/netcoreapp3.1/556_Assignment.dll
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/bin/Debug/netcoreapp3.1/556_Assignment.pdb
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/obj/Debug/netcoreapp3.1/556_Assignment.dll
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/obj/Debug/netcoreapp3.1/556_Assignment.pdb
+/Users/skylerbang/Projects/556_Assignment/556_Assignment/obj/Debug/netcoreapp3.1/556_Assignment.genruntimeconfig.cache

@@ -1,0 +1,41 @@
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Head */
+background {
+  background-color: yellow;
+  width: auto;
+}
+
+img-fluid {
+  background-color: slategray;
+}
+.jumbotron {
+  background-image: url("/img/8.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* Body */
+
+button1 {
+  text-align: center;
+}
+
+/* Footer*/
+footer {
+  background-color: rgb(73, 72, 72);
+  color: white;
+  text-align: center;
+}
+
+img-product {
+  height: 200px;
+  width: 200px;
+}

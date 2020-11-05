@@ -1,0 +1,75 @@
+{% extends 'base.html' %} {% block head %}
+<style>
+  .currSign:before {
+    content: "$";
+  }
+</style>
+
+{% endblock %}{% block main %}
+<script>
+  let x = document.querySelectorAll(".myDIV");
+  for (let i = 0, len = x.length; i < len; i++) {
+    let num = Number(x[i].innerHTML).toLocaleString("en");
+    x[i].innerHTML = num;
+    x[i].classList.add("currSign");
+  }
+</script>
+
+<!-- display tours for the specific city -->
+<section>
+  <div class="text-dark text-center">
+    <div>
+      <p class="h3 text-dark mb-4">CHOOSE YOUR DREAM HERE TODY.</p>
+    </div>
+  </div>
+
+  <div class="card-columns text-black bg-dark">
+    <!-- each vechicle is a bootstrap card -->
+    {% for product in products%}
+    <div class="card">
+      <img
+        class="card-img-top"
+        src="{{url_for('static', filename='img/'+product.image)}}"
+        alt="Card image"
+      />
+      <div class="card-body bg-light">
+        <h4 class="card-title">Model Name :{{product.modelName}}</h4>
+        <p class="card-text">Maker :{{product.maker}}</p>
+        <p class="card-text">Productoin Year:{{product.productionYear}}</p>
+        <p class="card-text">Description:{{product.description}}</p>
+        <p class="card-text myDIV">Price : ${{product.price}}</p>
+        <p class="card-text">Seller :{{product.seller}}</p>
+      </div>
+
+      <div class="card-footer card text-center bg-secondary">
+        <!---
+        <a
+          href="{{ url_for('main.order', product_id=product.id) }}"
+          class="btn btn-primary"
+          >Add to Basket</a
+        >  -->
+        <div class="row">   
+            <a href=" {{ url_for('main.productdetail', product_id=product.id) }}" class="btn btn-outline-light">  Detail</a>
+            
+            <form action="{{ url_for('main.order') }}">
+              <input
+                type="hidden"
+                id="product_id"
+                name="product_id"
+                value="{{ product.id }}"
+              />
+              <input class="btn btn-outline-light" type="submit" value="Add to Basket" />
+            </form>
+             
+            <!-- <div><h2 style="color: rgba(255, 255, 255, 0.151)">h</h2></div> -->
+
+        
+         </div>    
+        </form>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

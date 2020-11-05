@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{2965A03D-403C-4FAC-B933-61D7BFC3DD21}|Default">
+  <MonoDevelop.Ide.ItemProperties.BlenderS PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assignment1_PartB/Program.cs">
+    <Files>
+      <File FileName="Assignment1_PartB/Program.cs" Line="71" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Assignment1_PartB" expanded="True">
+            <Node name="BlenderS" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

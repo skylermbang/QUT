@@ -1,0 +1,54 @@
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Head */
+background {
+  background-color: yellow;
+  width: auto;
+}
+
+img-fluid {
+  background-color: slategray;
+}
+/*
+.jumbotron {
+  background-image:  src="{{ url_for('static', filename='img/8.png}}
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+*/
+
+jumbotron_img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Body */
+
+button1 {
+  text-align: center;
+}
+
+/* Footer*/
+footer {
+  background-color: rgb(28, 171, 196);
+  color: white;
+  text-align: center;
+}
+
+img-product {
+  height: 200px;
+  width: 200px;
+}

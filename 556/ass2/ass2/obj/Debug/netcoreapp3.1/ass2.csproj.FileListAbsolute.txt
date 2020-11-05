@@ -1,0 +1,12 @@
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/obj/Debug/netcoreapp3.1/ass2.csprojAssemblyReference.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/obj/Debug/netcoreapp3.1/ass2.AssemblyInfoInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/obj/Debug/netcoreapp3.1/ass2.AssemblyInfo.cs
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/obj/Debug/netcoreapp3.1/ass2.csproj.CoreCompileInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/bin/Debug/netcoreapp3.1/ass2.deps.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/bin/Debug/netcoreapp3.1/ass2.runtimeconfig.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/bin/Debug/netcoreapp3.1/ass2.runtimeconfig.dev.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/bin/Debug/netcoreapp3.1/ass2.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/bin/Debug/netcoreapp3.1/ass2.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/obj/Debug/netcoreapp3.1/ass2.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/obj/Debug/netcoreapp3.1/ass2.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/556/ass2/ass2/obj/Debug/netcoreapp3.1/ass2.genruntimeconfig.cache

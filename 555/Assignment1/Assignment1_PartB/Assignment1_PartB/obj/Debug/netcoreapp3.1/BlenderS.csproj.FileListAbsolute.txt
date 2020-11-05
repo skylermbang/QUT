@@ -1,0 +1,12 @@
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/bin/Debug/netcoreapp3.1/BlenderS.deps.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/bin/Debug/netcoreapp3.1/BlenderS.runtimeconfig.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/bin/Debug/netcoreapp3.1/BlenderS.runtimeconfig.dev.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/bin/Debug/netcoreapp3.1/BlenderS.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/bin/Debug/netcoreapp3.1/BlenderS.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/obj/Debug/netcoreapp3.1/BlenderS.csprojAssemblyReference.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/obj/Debug/netcoreapp3.1/BlenderS.AssemblyInfoInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/obj/Debug/netcoreapp3.1/BlenderS.AssemblyInfo.cs
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/obj/Debug/netcoreapp3.1/BlenderS.csproj.CoreCompileInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/obj/Debug/netcoreapp3.1/BlenderS.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/obj/Debug/netcoreapp3.1/BlenderS.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/555/Assignment1/Assignment1_PartB/Assignment1_PartB/obj/Debug/netcoreapp3.1/BlenderS.genruntimeconfig.cache
