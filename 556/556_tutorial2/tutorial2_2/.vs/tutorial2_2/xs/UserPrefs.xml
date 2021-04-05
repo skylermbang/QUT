@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{4DAB2CA9-FB35-40B1-B312-BCCF56CC7D3C}|Default">
+  <MonoDevelop.Ide.ItemProperties.tutorial2__2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+    <Files>
+      <File FileName="Program.cs" Line="43" Column="41" />
+      <File FileName="../../../563/tutorial2/tutorial2/tutorial2/EmptyClass.cs" Line="54" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

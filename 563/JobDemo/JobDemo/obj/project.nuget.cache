@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FTSsmOkb30f6me5FY5eVDM4aMz7Fp51JvbDiZEnGDM5u+WxMNbN0Gh+MOnKmn3PFzAHRv2/WnsgWLCCHZMLDTg==",
+  "success": true,
+  "projectFilePath": "/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/JobDemo/JobDemo/JobDemo.csproj",
+  "expectedPackageFiles": [
+    "/Users/skylerbang/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}

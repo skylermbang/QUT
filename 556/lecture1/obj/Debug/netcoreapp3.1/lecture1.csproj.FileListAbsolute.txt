@@ -1,0 +1,11 @@
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/bin/Debug/netcoreapp3.1/lecture1.deps.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/bin/Debug/netcoreapp3.1/lecture1.runtimeconfig.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/bin/Debug/netcoreapp3.1/lecture1.runtimeconfig.dev.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/bin/Debug/netcoreapp3.1/lecture1.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/bin/Debug/netcoreapp3.1/lecture1.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/obj/Debug/netcoreapp3.1/lecture1.AssemblyInfoInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/obj/Debug/netcoreapp3.1/lecture1.AssemblyInfo.cs
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/obj/Debug/netcoreapp3.1/lecture1.csproj.CoreCompileInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/obj/Debug/netcoreapp3.1/lecture1.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/obj/Debug/netcoreapp3.1/lecture1.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/obj/Debug/netcoreapp3.1/lecture1.genruntimeconfig.cache

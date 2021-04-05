@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/lecture1.csproj": {}
+  },
+  "projects": {
+    "/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/lecture1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/lecture1.csproj",
+        "projectName": "lecture1",
+        "projectPath": "/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/lecture1.csproj",
+        "packagesPath": "/Users/skylerbang/.nuget/packages/",
+        "outputPath": "/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/556/lecture1/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/skylerbang/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

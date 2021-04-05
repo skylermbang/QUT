@@ -1,0 +1,12 @@
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/bin/Debug/netcoreapp3.1/IFN563_Assignment.deps.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/bin/Debug/netcoreapp3.1/IFN563_Assignment.runtimeconfig.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/bin/Debug/netcoreapp3.1/IFN563_Assignment.runtimeconfig.dev.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/bin/Debug/netcoreapp3.1/IFN563_Assignment.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/bin/Debug/netcoreapp3.1/IFN563_Assignment.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/obj/Debug/netcoreapp3.1/IFN563_Assignment.csprojAssemblyReference.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/obj/Debug/netcoreapp3.1/IFN563_Assignment.AssemblyInfoInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/obj/Debug/netcoreapp3.1/IFN563_Assignment.AssemblyInfo.cs
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/obj/Debug/netcoreapp3.1/IFN563_Assignment.csproj.CoreCompileInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/obj/Debug/netcoreapp3.1/IFN563_Assignment.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/obj/Debug/netcoreapp3.1/IFN563_Assignment.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/IFN563_Assignment/obj/Debug/netcoreapp3.1/IFN563_Assignment.genruntimeconfig.cache

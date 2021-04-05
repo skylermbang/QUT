@@ -1,0 +1,12 @@
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/obj/Debug/netcoreapp3.1/lecturereview.csprojAssemblyReference.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/obj/Debug/netcoreapp3.1/lecturereview.AssemblyInfoInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/obj/Debug/netcoreapp3.1/lecturereview.AssemblyInfo.cs
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/obj/Debug/netcoreapp3.1/lecturereview.csproj.CoreCompileInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/bin/Debug/netcoreapp3.1/lecturereview.deps.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/bin/Debug/netcoreapp3.1/lecturereview.runtimeconfig.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/bin/Debug/netcoreapp3.1/lecturereview.runtimeconfig.dev.json
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/bin/Debug/netcoreapp3.1/lecturereview.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/bin/Debug/netcoreapp3.1/lecturereview.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/obj/Debug/netcoreapp3.1/lecturereview.dll
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/obj/Debug/netcoreapp3.1/lecturereview.pdb
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/lecturereview/lecturereview/obj/Debug/netcoreapp3.1/lecturereview.genruntimeconfig.cache

@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{D0076634-2FD2-4E83-9BA2-6D31B14531FA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="tutorial2/EmptyClass.cs">
+    <Files>
+      <File FileName="tutorial2/Program.cs" Line="22" Column="30" />
+      <File FileName="tutorial2/EmptyClass.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.tutorial2 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

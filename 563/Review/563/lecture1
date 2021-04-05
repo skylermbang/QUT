@@ -1,0 +1,85 @@
+// IFN 561 Lecutre 
+
+1.1 Userstand methods and implementaion hiding
+
+
+From FIN555 we learn making prgraom with only one main methode 
+contains variaable declartion -> loop , if , array;
+
+555 was too simple , we have complex programming.   many variables /logic/ ...etc
+
+we dont put them all in one big long main methodes ;
+we modulized into small packages.   
+how to create methods? 
+
+now we make one specialized methode for certain task. 
+
+
+
+Method :  encapsulated sereis of stament to do certain task.
+			If the methode is invoked(called), to be used.
+		  If you put those thing in the methode : resuable and easy to orgzanized.
+
+
+Method declaration;    
+
+method header:  [1. accessibility modifier] [2.static modifier] [3.return type] [4.Method_Name]([5.parameter] ){
+	method body
+}
+
+
+1.accessbility modifier : limits how other methods can use your methods 
+						default : private
+                        pubulic : allow access to the moethod from toher classes
+                        private : limit method access to class that contins the method 
+
+
+2.static modifier : decalre a method to be static / nonstatic;
+					static: can be called without referring to an object, (no need object )
+					nonstatic: can be used only in conjunction with an object
+					           default ;		
+
+3. return type : indicates what kind of value the method will return on completion to any other method that calls it.
+ 				void : no return;
+ 				int or double ; it will return int or double as result  => value-returning methods;
+
+
+4. method identifier : usually its the verb becaue method cause actions ; 
+						DeductTax(),  CalculatTax()....etc 
+
+
+5. Parameter : variable that holds data passsed to a method when it is called; 
+				argument / parameters 
+			   one parameter or multiple;
+			   	WriteLine("blach") ;  "blach" is the arugment/parameter 
+
+
+
+
+
+
+Variable and constants can be declared in a method ;
+
+
+
+<code>
+
+local variable :  a is the loval variable;  only used in the methode  ;
+
+
+
+Scope ; the are in which a variable in known
+ 
+
+
+
+1.2 Write methods with no parameters and no return value
+
+
+ <pic> 
+
+
+
+
+
+ 

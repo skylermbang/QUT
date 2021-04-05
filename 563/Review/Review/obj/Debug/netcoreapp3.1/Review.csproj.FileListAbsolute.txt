@@ -1,0 +1,3 @@
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/Review/Review/obj/Debug/netcoreapp3.1/Review.AssemblyInfoInputs.cache
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/Review/Review/obj/Debug/netcoreapp3.1/Review.AssemblyInfo.cs
+/Users/skylerbang/Downloads/QUT/QUT_Programming/QUT/563/Review/Review/obj/Debug/netcoreapp3.1/Review.csproj.CoreCompileInputs.cache
