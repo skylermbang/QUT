@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Interface.cs" Line="22" Column="10" />
       <File FileName="Connect4.cs" />
-      <File FileName="Program.cs" Line="76" Column="14" />
+      <File FileName="Program.cs" Line="18" Column="40" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
