@@ -12,36 +12,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <title>Blog</title>
+    <title> Travel World </title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
 
   <script>
-
-    const rp = require('request-promise');
-    const requestOptions = {
-      method: 'GET',
-      uri: 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest',
-      qs: {
-        'start': '1',
-        'limit': '5000',
-        'convert': 'USD'
-      },
-      headers: {
-        'X-CMC_PRO_API_KEY': 'b54bcf4d-1bca-4e8e-9a24-22ff2c3d462c'
-      },
-      json: true,
-      gzip: true
-    };
-
-    rp(requestOptions).then(response => {
-      console.log('API call response:', response);
-    }).catch((err) => {
-      console.log('API call error:', err.message);
-    });
-
-
-
 
     localStorage.clear();
 
@@ -54,29 +29,21 @@
       //get_detail();
     });
 
-    function sign_in() {
-      let id = document.getElementById("id").value;
-      let password = document.getElementById("password").value;
-      console.log(id, password, "checking from html");
+
+    function get_location(){
       $.ajax({
-        type: "POST",
-        url: "user/auth",
+        type: "GET",
+        url: "https://www.travel-advisory.info/api",
         data: {
-          id: id,
-          password: password,
+  
         },
         success: function (response) {
-          console.log("testing from sucess ajax call");
-          localStorage.setItem("token", response.token);
-          window.location.replace("/list");
-        },
-        error: function (error) {
-          // error messsage
-          //alert(xhr.responseText);
-          alert(error.responseJSON.errorMeasage);
+          console.log(response);
+
         },
       });
     }
+  
   </script>
   <body>
     <!-- Optional JavaScript; choose one of the two! -->
@@ -90,7 +57,7 @@
 
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"> AIGO </a>
+        <a class="navbar-brand" href="#"> Travel World  </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -127,7 +94,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="ID"
+                  placeholder="Location"
                   aria-label="Username"
                   aria-describedby="basic-addon1"
                   id="id"
@@ -138,33 +105,22 @@
                   <span class="input-group-text" id="basic-addon2"
                     ><i class="fa fa-lock" aria-hidden="true"></i
                   ></span>
-                </div>
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Password"
-                  aria-label="Password"
-                  aria-describedby="basic-addon2"
-                  id="password"
-                />
-              </div>
+           
             </div>
+          
+
             <button
               class="btn btn-primary"
               style="margin-top: 10px"
-              onclick="sign_in()"
+              onclick= get_location()
             >
-              Sign In
-            </button>
-            <button
-              class="btn btn-primary"
-              style="margin-top: 10px"
-              onclick="window.location.href=`./register`"
-            >
-              Sign Up
+              Get Location
             </button>
           </div>
         </div>
+      </div>
+      <div class="result", id ="result" stylesheet="background:black">
+        <h2> hi</h2>
       </div>
     </div>
 
