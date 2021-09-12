@@ -20,10 +20,7 @@
 
     localStorage.clear();
 
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const postId = urlParams.get("postId");
-    console.log(postId);
+    
 
     $(document).ready(function () {
       //get_detail();
@@ -31,23 +28,90 @@
 
 
     function get_location(){
+      let selection = document.getElementById("country").value 
+      console.log(selection + " is selection")
+
       $.ajax({
         type: "GET",
-        url: "https://www.travel-advisory.info/api",
+        url: `https://www.travel-advisory.info/api?countrycode=${selection}`,
         data: {
   
         },
         success: function (response) {
-          console.log(response);
+          console.log(response.data)
+          console.log(" API 1 Result ")
+       
 
-        },
-      });
-    }
-  
+
+          if (selection === "AU"){
+     
+            target = response.data.AU
+            temp_html= target.name
+            target_name = target.name
+            target_advisory = target.advisory
+          }
+
+
+
+          $('#result').val()
+   
+          console.log(temp_html)
+          $('#result').append(`<h2> ${target_name} </h2>`);
+          $('#result').append(`<p> ${target_advisory.message}  </p>`);
+          
+
+              $.ajax({
+            type: "GET",
+            url: `    https://covid2019-api.herokuapp.com/v2/country/Australia`,
+            data: {
+      
+            },
+            success: function (response) {
+              console.log(response)
+              let data = response.data
+     
+
+              $('#result').append(`<div class="card" style="width: 18rem;">
+                                    <div class="card-header">
+                                      Covid Status 
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item"> Total Confirmed Case : ${data.confirmed}</li>
+                                      <li class="list-group-item"> Total Death by Covid : ${data.deaths} </li>
+                                    </ul>
+                                  </div>`);
+            },
+          });
+
+          $.ajax({
+            type: "GET",
+            url: `    https://restcountries.eu/rest/v2/name/${selection}`,
+            data: {
+      
+            },
+            success: function (response) {
+              console.log(response + " api3 ")
+              let data = response.data
+     
+
+              $('#result').append();
+       
+            },
+          });
+
+         
+          
+            },
+          });
+        }
+
+   
+
+
+
   </script>
   <body>
     <!-- Optional JavaScript; choose one of the two! -->
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -91,36 +155,32 @@
                     ><i class="fa fa-user-o" aria-hidden="true"></i
                   ></span>
                 </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Location"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                  id="id"
-                />
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="country">
+                  <option selected>Open this select menu</option>
+                  <option value="AU"> Australia </option>
+                  <option value="2"> India </option>
+                  <option value="3"> China</option>
+                </select>
               </div>
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text" id="basic-addon2"
                     ><i class="fa fa-lock" aria-hidden="true"></i
-                  ></span>
-           
+                  ></span>  
             </div>
-          
-
+        
             <button
               class="btn btn-primary"
               style="margin-top: 10px"
               onclick= get_location()
             >
-              Get Location
+              Choose Country
             </button>
           </div>
         </div>
       </div>
-      <div class="result", id ="result" stylesheet="background:black">
-        <h2> hi</h2>
+      <div class="result", id ="result" >
+        <h2 id="result"> </h2>
       </div>
     </div>
 
