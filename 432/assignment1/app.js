@@ -1,10 +1,11 @@
 const express = require("express");
-const jwt = require("jsonwebtoken");
-const Joi = require("joi");
 const app = express();
 const port = 8111;
-const Date = require("./date");
+const axios = require("axios").default;
+
 const authMiddleware = require("./middlewares/auth-middleware");
+require('dotenv').config();
+
 
 // this is middleware for processing the data
 app.use(express.urlencoded({ extended: false })); // request.body ?  to get
@@ -24,15 +25,38 @@ app.use((req, res, next) => {
 });
 
 
-app.get("https://www.travel-advisory.info/api", (req, res) => {
-  res.send("data")
-})
 
 
 app.get("/", (req, res, next) => {
-  res.render("index")
+
+  res.render("index", { token: process.env.TOKEN })
+});
+
+app.get("/list/:continentcode", async (req, res) => {
+
+  const { continentcode } = req.params
+
+  var options = {
+    method: 'GET',
+    url: 'https://geo-services-by-mvpc-com.p.rapidapi.com/continents',
+    params: { language: 'en', continentcode: continentcode },
+    headers: {
+      'x-rapidapi-host': process.env.RAPIDAPI_HOST,
+      'x-rapidapi-key': process.env.RAPIDAPI_KEY
+    }
+  };
+  axios.request(options).then(function (response) {
+    console.log(response.data)
+    res.send(response.data)
+  }).catch(function (error) {
+    console.error(error);
+  });
+
 
 });
+
+
+
 
 app.listen(port, () => {
   console.log(`listening at http://localhost:${port}`);
