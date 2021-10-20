@@ -15,17 +15,17 @@ app.use(express.static("public"));
 const connect = require("./schemas");
 connect();
 
-//posts router
-const postsRouter = require("./routes/posts");
-app.use("/posts", [postsRouter]);
+// //posts router
+// const postsRouter = require("./routes/posts");
+// app.use("/posts", [postsRouter]);
 
-//user router
-const userRouter = require("./routes/user");
-app.use("/user", [userRouter]);
+// //user router
+// const userRouter = require("./routes/user");
+// app.use("/user", [userRouter]);
 
-//comment router
-const commentRouter = require("./routes/comment");
-app.use("/comment", [commentRouter]);
+// //comment router
+// const commentRouter = require("./routes/comment");
+// app.use("/comment", [commentRouter]);
 
 // // mongoose  connect
 // const mongoose = require("mongoose");
@@ -83,35 +83,29 @@ app.use("/comment", [commentRouter]);
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
 
-//middleware-custome
-app.use((req, res, next) => {
-  //console.log(req);
-  next();
-});
+
+
+function get_crypto() {
+
+}
 
 app.get("/", (req, res, next) => {
+
   res.render("index");
 });
 
-app.get("/detail", (req, res) => {
-  res.render("detail");
+app.post("/btc", (req, res) => {
+  console.log("BTC searching")
+  res.status(200).json({ result: "successful" })
 });
 
-app.get("/write", (req, res) => {
+app.get("/eth", (req, res) => {
   res.render("post");
 });
 
-app.get("/update", (req, res) => {
-  res.render("update");
-});
 
-app.get("/register", (req, res) => {
-  res.render("register");
-});
 
-app.get("/list", (req, res) => {
-  res.render("list");
-});
+
 
 app.get("/test", (req, res) => {
   let name = req.query.name;
