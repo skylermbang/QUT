@@ -1,7 +1,7 @@
 const express = require('express');
 const helmet = require('helmet');
 const { MongoClient, ObjectID } = require('mongodb');
-const router = require('express').Router();
+
 const url = process.env.MONGO_URL || 'mongodb://localhost:27017/twtsnt';
 const dbName = 'twtsnt';
 let client = null;
@@ -29,10 +29,10 @@ async function getDB() {
 }
 
 // HTTP Security header middleware
-router.use(helmet());
+app.use(helmet());
 
 // Get score from the given keyword    i.e.) /api/score?keyword=bitcoin
-router.get('/api/score', async (req, res) => {
+app.get('/api/score', async (req, res) => {
     try {
         const db = await getDB();
         if (!req.query.keyword) {
@@ -56,7 +56,7 @@ router.get('/api/score', async (req, res) => {
 });
 
 // Get sentiment analysis tweets data
-router.get('/api/tweets', async (req, res) => {
+app.get('/api/tweets', async (req, res) => {
     try {
         const db = await getDB();
         if (!req.query.keyword) {
@@ -98,4 +98,10 @@ router.get('/api/tweets', async (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = app;
+
+// Start the express server
+app.listen(port, err => {
+    if (err) throw err;
+    console.log(`> Ready On Server http://localhost:${port}`);
+});
