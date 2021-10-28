@@ -24,13 +24,6 @@ const calculateAndStore = async (db, keyword) => {
     // Count negative tweets
     const negativeCount = await data.countDocuments({ score: -1 });
 
-    // get bitcoin from coinbase and 24 hour change
-    // https://api.gdax.com/products/btc-usd/stats
-    // "open":"3804.41000000","high":"3874.12000000","low":"3730.00000000","volume":"8860.63154635","last":"3835.00000000","volume_30day":"452787.73451902"}
-    // last / open - 1
-    //const stats = await getCoinPrice('btc');
-    //const change = (stats.last / stats.open - 1) * 100;
-
     // Calculate trend
     const trendFromTweet = ((positiveCount - negativeCount) / totalCount) * 100;
 
@@ -113,7 +106,7 @@ const registerKeyword = async (db, keyword, interval) => {
         const db = client.db(dbName);
 
         // Register "bitcoin" keyword
-        await registerKeyword(db, 'bitcoin', 3000);
+        await registerKeyword(db, "bitcoin", 3000);
         console.log("Keyword was has been registered")
     } catch (err) {
         console.log(err.stack);

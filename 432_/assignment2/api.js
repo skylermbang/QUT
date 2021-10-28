@@ -31,10 +31,6 @@ async function getDB() {
 // HTTP Security header middleware
 router.use(helmet());
 
-router.get('/index', async (req, res) => {
-
-    res.render("index")
-})
 
 // Get score from the given keyword    i.e.) /api/score?keyword=bitcoin
 router.get('/api/score', async (req, res) => {

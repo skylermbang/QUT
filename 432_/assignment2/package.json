@@ -17,8 +17,13 @@
     "mongoose": "^5.13.2",
     "mongoose-auto-increment": "^5.0.1",
     "nodemon": "^2.0.13",
+    "redis": "^3.1.2",
+    "request": "^2.88.2",
+    "response-time": "^2.3.2",
     "sentiment": "^5.0.2",
-    "twit": "^2.2.11"
+    "twit": "^2.2.11",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {},
   "scripts": {
