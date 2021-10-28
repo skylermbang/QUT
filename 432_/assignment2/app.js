@@ -39,6 +39,13 @@ app.get("/", (req, res, next) => {
   res.render("index");
 });
 
+
+app.get("/pi", (req, res, next) => {
+
+  res.render("pi");
+});
+
+
 app.get("/btc", (req, res) => {
   console.log("BTC searching")
 

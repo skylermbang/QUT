@@ -8,19 +8,7 @@ const dbName = 'twtsnt';
 // Create a MongoDB client instance
 const client = new MongoClient(url, { useNewUrlParser: true });
 
-// Get current Bitcoin price, BTC-USD, from GDAX API (Coinbase Pro)
-const getCoinPrice = async (coin = 'btc') => {
-    try {
-        const res = await axios.get(
-            `https://api.gdax.com/products/${coin}-usd/stats`,
-        );
-        console.log("btc price :", res.response)
-        return res.data;
-    } catch (err) {
-        console.error(err);
-        return null;
-    }
-};
+
 
 
 
