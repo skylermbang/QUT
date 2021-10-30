@@ -1,16 +1,10 @@
 const { MongoClient } = require('mongodb');
 const axios = require('axios');
 const createStream = require('./tweetCrawler');
-
-
 const url = process.env.MONGO_URL || 'mongodb://localhost:27017/twtsnt';
 const dbName = 'twtsnt';
 // Create a MongoDB client instance
 const client = new MongoClient(url, { useNewUrlParser: true });
-
-
-
-
 
 // Calculate the keyword score and save the score along with the keyword analysis data
 const calculateAndStore = async (db, keyword) => {
