@@ -54,6 +54,58 @@
 
             }
 
+            $.ajax({
+        type: "GET",
+        url: `/article/google`,
+        data: {},
+        success: function (response) {
+          console.log(response.result)
+          console.log(response.result[0])
+
+          if (response.result.length >= 2 ){
+            console.log("this is from mongodb / url")
+            console.log(response.result.length)
+
+            let articles = response.result;
+          for (let i = 0; i < articles.length ; i++) {
+         
+            // console.log(i)
+            // console.log(response.result[i].title)
+            // console.log(response.result[i].url)
+            let title = response.result[i].title
+            let url = response.result[i].url
+            make_card(title, url);
+          }
+          }else{
+            console.log("this is from redis ")
+            let title = response.result.title
+            let url = response.result.url
+          //   console.log(response.result.title)
+          // console.log(response.result.url)
+          make_card(title,url)
+          }
+
+       
+   
+      
+         
+        },
+      });
+    
+
+    function make_card(title,url) {
+      let htmlTemp = `<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"> Article </h5>
+   
+    <p class="card-text">${title}</p>
+    <a href="#" class="card-link">${url}</a>
+  
+  </div>
+</div>`;
+      $("#articlelist").append(htmlTemp);
+    }     
+
 
 
 
@@ -133,7 +185,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"> Assignment 2 </a>
+        <a class="navbar-brand" href="/"> Assignment 2 </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -148,20 +200,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">BTC</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ETH</a>
-            </li>
+         
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="container">
+      <label class="btn btn-outline-primary" for="btncheck1" onclick=window.location.reload();>Update</label>
       <div id="chart_div"></div>
       <div
         class="btn-group"
@@ -174,11 +225,11 @@
           id="btncheck1"
           autocomplete="off"
         />
-        <label class="btn btn-outline-primary" for="btncheck1" onclick=window.location.reload();>Update</label>
 
 
+   
     </div>
-
+    <div class="articlelist" id="articlelist"> <h3>  Recent Article(s) about Bitcoin</h3></div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

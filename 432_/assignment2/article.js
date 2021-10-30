@@ -6,6 +6,7 @@ const redis = require('redis');
 var convert = require('xml-js');
 const app = express();
 
+const router = require('express').Router();
 // mongodb schemas and connect
 const connect = require("./schemas");
 const Article = require('./schemas/articles')
@@ -25,7 +26,7 @@ app.use(responseTime());
 
 
 // create an api/search route
-app.get('/article', (req, res) => {
+router.get('/google', (req, res) => {
     const result_array = [];
     const redis_array = [];
     const mongodb_array = [];
@@ -190,18 +191,11 @@ app.get('/article', (req, res) => {
     }
 
 
-
-
-
-
     //Try fetching the result from Redis first in case we have it cached
     return client.get(`article8`, (err, result) => {
         console.log("start")
-
-
         // If that key exist in Redis store
         if (result) {
-
             let redis_result = result.toString()
             let redis_title = redis_result.split("+")[0]
             let redis_url = redis_result.split("+")[1]
@@ -275,6 +269,4 @@ app.get('/article', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log('Server listening on port: ', 3000);
-});
+module.exports = router;

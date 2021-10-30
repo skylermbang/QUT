@@ -28,7 +28,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"> Assignment 2 </a>
+        <a class="navbar-brand" href="/"> Assignment 2 </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -43,20 +43,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">BTC</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ETH</a>
+              <a class="nav-link" href="/pi" onclick=>BTC</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
+   
+    
     <div class="container">
+      <div  style="width:10px; height:10px;">
+        <img src="https://bitcoin.org/img/home/bitcoin-img.svg?1635361677" class="rounded" alt="...">
+      </div>
       <div
         class="btn-group"
         role="group"
@@ -68,15 +69,9 @@
           id="btncheck1"
           autocomplete="off"
         />
-        <label class="btn btn-outline-primary" for="btncheck1">BTC</label>
+        <label class="btn btn-outline-warning" for="btncheck1"  onclick='window.location.href="/pi"'>GET BTC INFO</label>
 
-        <input
-          type="checkbox"
-          class="btn-check"
-          id="btncheck2"
-          autocomplete="off"
-        />
-        <label class="btn btn-outline-primary" for="btncheck2">ETH</label>
+        
       </div>
     </div>
 

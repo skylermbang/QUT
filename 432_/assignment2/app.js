@@ -25,7 +25,8 @@ app.set("view engine", "ejs");
 const tweetRouter = require("./api")
 app.use("/tweeter", [tweetRouter])
 
-
+const articleRouter = require("./article")
+app.use("/article", [articleRouter])
 
 
 app.get("/", (req, res, next) => {
