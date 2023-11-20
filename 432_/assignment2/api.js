@@ -1,14 +1,14 @@
-const express = require('express');
+
 const helmet = require('helmet');
 const { MongoClient, ObjectID } = require('mongodb');
 const router = require('express').Router();
-const url = process.env.MONGO_URL || 'mongodb://localhost:27017/twtsnt';
-const dbName = 'twtsnt';
+const url = 'mongodb://localhost:27017/asg2';
+//const url = "mongodb+srv://test:test@cluster0.2aerj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const dbName = 'asg2';
 let client = null;
-const port = process.env.PORT || 3000;
-const app = express();
 
-// Get a database instance
+
+// connecting to mongoDB
 async function getDB() {
     if (client && !client.isConnected) {
         client = null;
@@ -32,7 +32,7 @@ async function getDB() {
 router.use(helmet());
 
 
-// Get score from the given keyword    i.e.) /api/score?keyword=bitcoin
+// Get Sentimental analysis data   i.e.) /api/score?keyword=bitcoin
 router.get('/api/score', async (req, res) => {
     try {
         const db = await getDB();
@@ -40,13 +40,12 @@ router.get('/api/score', async (req, res) => {
             res.status(400).json({ message: 'missing keyword' });
         }
 
-        const resp = {};
-        const keyword = req.query.keyword;
-        const collection = db.collection('calc');
-
-        const data = await collection.findOne({ keyword });
+        const keyword_input = req.query.keyword;
+        console.log("keyword is : ", keyword_input)
+        const Calc = db.collection('calc');
+        const data = await Calc.findOne({ keyword: keyword_input });
         res.json({
-            keyword,
+            keyword: keyword_input,
             data,
         });
     } catch (err) {
@@ -56,12 +55,12 @@ router.get('/api/score', async (req, res) => {
     }
 });
 
-// Get sentiment analysis tweets data
+// Get  tweets data
 router.get('/api/tweets', async (req, res) => {
     try {
         const db = await getDB();
         if (!req.query.keyword) {
-            res.status(400).json({ message: 'missing keyword' });
+            res.status(400).json({ message: 'no keyword input' });
         }
 
         const resp = {};
@@ -88,9 +87,7 @@ router.get('/api/tweets', async (req, res) => {
         } else {
             collection = collection.find();
         }
-
         resp.tweets = await collection.sort({ _id: -1 }).limit(limit).toArray();
-
         res.json(resp);
     } catch (err) {
         res.status(500).json({

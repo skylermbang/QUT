@@ -59,8 +59,8 @@
         url: `/article/google`,
         data: {},
         success: function (response) {
-          console.log(response.result)
-          console.log(response.result[0])
+          //console.log(response.result)
+          //console.log(response.result[0])
 
           if (response.result.length >= 2 ){
             console.log("this is from mongodb / url")
@@ -69,9 +69,7 @@
             let articles = response.result;
           for (let i = 0; i < articles.length ; i++) {
          
-            // console.log(i)
-            // console.log(response.result[i].title)
-            // console.log(response.result[i].url)
+      
             let title = response.result[i].title
             let url = response.result[i].url
             make_card(title, url);
